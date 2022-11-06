@@ -1,0 +1,425 @@
+.header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  background-color: white;
+}
+.header .logo {
+  width: 30%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .nav {
+  width: 40%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.header .nav a {
+  text-decoration: none;
+  color: black;
+}
+.header .nav a:hover {
+  color: #ffc40e;
+}
+.header .cart {
+  width: 30%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .cart a {
+  width: 30%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  border: 1px solid orange;
+  background-color: #ffc40e;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+.header .cart a:hover {
+  background-color: #d1a215;
+  border: 1px solid #d1a215;
+}
+.header .cart a span {
+  margin-left: 5px;
+}
+
+.home {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+}
+.home .main-box {
+  width: 80%;
+  height: 600px;
+}
+.home .main-box .title {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home .main-box .title h1 {
+  font-size: 3.375rem;
+  font-weight: 500;
+  letter-spacing: 4px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.home .main-box .photo {
+  width: 100%;
+  height: 500px;
+}
+
+.empty {
+  width: 100%;
+  height: 600px;
+}
+.empty h1 {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 50px;
+}
+.empty img {
+  margin-left: 500px;
+}
+
+.tableCart {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+}
+.tableCart .main-box {
+  width: 80%;
+  height: auto;
+}
+.tableCart .main-box table {
+  width: 100%;
+  border: 1px solid black;
+}
+.tableCart .main-box table th {
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+.tableCart .main-box table td {
+  font-size: 20px;
+  font-weight: 500;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  text-align: center;
+}
+.tableCart .main-box table td:nth-child(5) button {
+  background-color: orange;
+  color: white;
+  width: 20%;
+  height: 30px;
+  cursor: pointer;
+}
+.tableCart .main-box table td:nth-child(5) span {
+  margin-right: 10px;
+}
+.tableCart .main-box table td:nth-child(5) button:nth-child(1) {
+  margin-right: 10px;
+}
+.tableCart .main-box table .btn-delete {
+  width: 50%;
+  height: 40px;
+  border: 1px solid orange;
+  border-radius: 15px;
+  background-color: orange;
+  color: black;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+}
+.tableCart .main-box table .btn-delete:hover {
+  background-color: rgb(193, 135, 28);
+  border: 1px solid rgb(193, 135, 28);
+}
+.tableCart .main-box h1 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.menu {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu .main-box {
+  width: 80%;
+  height: 900px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.menu .main-box .cart {
+  width: 25%;
+  height: 400px;
+  border: 1px solid white;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.menu .main-box .cart:hover h1 {
+  color: #ffc40e;
+}
+.menu .main-box .cart .photo {
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+.menu .main-box .cart .photo p {
+  width: 25%;
+  height: 50px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 900;
+  color: orange;
+  background-color: black;
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+.menu .main-box .cart .title {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu .main-box .cart .title h1 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.menu .main-box .cart .price {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu .main-box .cart .price button {
+  width: 40%;
+  height: 45px;
+  cursor: pointer;
+  background-color: #ffc40e;
+  border: 1px solid #ffc40e;
+  font-weight: 700;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+.menu .main-box .cart .price button:hover {
+  background-color: #d1a215;
+  border: 1px solid #d1a215;
+}
+
+.footer {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+}
+.footer .main-box {
+  width: 80%;
+  height: 500px;
+}
+.footer .main-box .options {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .main-box .options .aboutUs {
+  width: 20%;
+  height: 200px;
+}
+.footer .main-box .options .aboutUs a {
+  text-decoration: none;
+  color: black;
+}
+.footer .main-box .options .aboutUs ul {
+  width: 100%;
+  height: auto;
+}
+.footer .main-box .options .aboutUs ul li:nth-child(1) {
+  font-size: 20px;
+}
+.footer .main-box .options .aboutUs ul li:nth-child(2) {
+  margin-top: 30px;
+}
+.footer .main-box .options .aboutUs ul .navLi {
+  margin-top: 10px;
+}
+.footer .main-box .options .career {
+  width: 20%;
+  height: 200px;
+}
+.footer .main-box .options .career a {
+  text-decoration: none;
+  color: black;
+}
+.footer .main-box .options .career ul {
+  width: 100%;
+  height: auto;
+}
+.footer .main-box .options .career ul li:nth-child(1) {
+  font-size: 20px;
+}
+.footer .main-box .options .career ul li:nth-child(2) {
+  margin-top: 30px;
+}
+.footer .main-box .options .career ul .navLi {
+  margin-top: 10px;
+}
+.footer .main-box .options .services {
+  width: 20%;
+  height: 200px;
+}
+.footer .main-box .options .services a {
+  text-decoration: none;
+  color: black;
+}
+.footer .main-box .options .services ul {
+  width: 100%;
+  height: auto;
+}
+.footer .main-box .options .services ul li:nth-child(1) {
+  font-size: 20px;
+}
+.footer .main-box .options .services ul li:nth-child(2) {
+  margin-top: 30px;
+}
+.footer .main-box .options .services ul .navLi {
+  margin-top: 10px;
+}
+.footer .main-box .options .contactUs {
+  width: 25%;
+  height: 200px;
+}
+.footer .main-box .options .contactUs a {
+  text-decoration: none;
+  color: black;
+}
+.footer .main-box .options .contactUs ul {
+  width: 100%;
+  height: auto;
+}
+.footer .main-box .options .contactUs ul li:nth-child(1) {
+  font-size: 20px;
+}
+.footer .main-box .options .contactUs ul li:nth-child(2) {
+  margin-top: 30px;
+}
+.footer .main-box .options .contactUs ul .navLi {
+  margin-top: 10px;
+}
+.footer .main-box .links {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .main-box .links .social {
+  width: 25%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .main-box .links .social .fb {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.footer .main-box .links .social .fb:hover {
+  background-color: blue;
+  color: white;
+}
+.footer .main-box .links .social .yt {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.footer .main-box .links .social .yt:hover {
+  background-color: red;
+  color: white;
+}
+.footer .main-box .links .social .insta {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.footer .main-box .links .social .insta:hover {
+  background-color: rgb(187, 74, 112);
+  color: white;
+}
+.footer .main-box .links .social .in {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.footer .main-box .links .social .in:hover {
+  background-color: rgb(45, 148, 189);
+  color: white;
+}
+.footer .main-box .links .social ul {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer .main-box .links .social ul li {
+  border: 1px solid black;
+  border-radius: 50px;
+  width: 15%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .main-box .links .social ul li a {
+  text-decoration: none;
+  color: black;
+}
+.footer .main-box .links .apps {
+  width: 30%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+.footer .main-box .line {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+.footer .main-box .since {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}/*# sourceMappingURL=style.css.map */
